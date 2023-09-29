@@ -85,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     reload.addEventListener("click", function () {
         window.location.reload();
-        console.log('clicked');
     })
 
 
