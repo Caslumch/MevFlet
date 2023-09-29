@@ -1,0 +1,168 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-image: url('./assets/Untitled-1-01.png');
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.container {
+    color: white;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #00000070;
+}
+
+.dashboard-item {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.options {
+    list-style-type: none;
+    gap: 10px;
+}
+
+.typeOpt {
+    white-space: nowrap;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.logoImg {
+    width: 100px;
+    max-width: 200px;
+    height: auto;
+}
+
+
+.w-full {
+    max-width: min-content;
+}
+
+.footer {
+    background-color: #3abcbc;
+    color: #fff;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.circle-container {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para dispositivos móveis (tela com largura máxima de 767px) */
+@media (max-width: 767px) {
+    .circle-container {
+        width: 150px;
+        /* Aumentamos o tamanho para 150px em dispositivos móveis */
+        height: 150px;
+        /* Defina a mesma altura para manter o círculo */
+    }
+
+    .circle-container img {
+        max-width: 100%;
+        /* A imagem dentro do círculo deve se ajustar à largura do círculo */
+        height: auto;
+        /* Mantenha a proporção da imagem */
+    }
+}
+
+.image-overlay {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.image-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    /* Cor de fundo inicialmente transparente */
+    transition: background-color 0.3s ease;
+    /* Adiciona uma transição suave para a mudança de cor */
+    pointer-events: none;
+    /* Garante que a sobreposição não interfira com eventos de mouse */
+}
+
+.image-overlay:hover::before {
+    background-color: rgba(67, 67, 67, 0.5);
+    /* Define a cor de fundo ao passar o mouse (aqui, 50% de opacidade em vermelho) */
+    background-image: url('./assets/logo-easy-car1.png');
+    background-image: url('./assets/logo-easy-car1.png');
+    background-size: 40% auto;
+    /* A imagem será dimensionada para cobrir todo o elemento pai */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem de fundo */
+    background-position-x: 46%;
+    background-position-y: 46%;
+
+}
+
+.textOne {
+    TEXT-ALIGN: center;
+    margin-top: 80px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.imgInsight {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+
+.btn {
+    /* font-family: "Aldrich", sans-serif; */
+    width: 224px;
+    height: 40px;
+    background-color: #3153a4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    /* text-decoration: none;s */
+    /* display: inline-block; */
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-right: 14%;
+}
