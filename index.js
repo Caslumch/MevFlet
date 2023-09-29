@@ -73,6 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
         imgInsight.src = currentInsight.link;
 
         if (insightText2.textContent) {
+            debugger;
+            insightText2.textContent = currentInsight.text2;
+            insightText2.style.display = "revert";
         } else {
             insightText2.style.display = "none";
         }
