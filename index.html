@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="./index.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="row container-fluid">
+                <div class="d-none d-md-block col-md-6 d-flex  ">
+
+                    <a class="navbar-brand mr-auto" href="#">
+                        <img class="logoImg" src="./assets/logo-easy-car1.png" alt="Logo da Dashboard">
+                    </a>
+                </div>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end text-md-end text-center"
+                    id="">
+                    <ul class="navbar-nav options d-flex flex-column flex-md-row align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link typeOpt" href="#">Minha Frota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link typeOpt" href="#">Alugados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link typeOpt" href="#">Meus Dados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link typeOpt" href="#">Ajustes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link typeOpt" href="#">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- ... Seu conteúdo aqui ... -->
+        <div class="row dashboard-car">
+            <div class="textOne col-12 col-md-6">
+                <h2>Seja parte da revolução sustentável com a Easy Carros!</h2>
+                <label>Na Easy Carros, não apenas alugamos carros elétricos, nós transformamos o seu modo de viajar em
+                    uma experiência revolucionária e eco-friendly.
+                    Aqui estão algumas propostas emocionantes que tornam a Easy Carros a escolha perfeita:</label>
+                <img class="logoImg d-none d-md-inline-flex mt-4" src="./assets/logo-easy-car1.png"
+                    alt="Logo da Dashboard">
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-center">
+                <div class="circle-container image-overlay">
+                    <img class="car img-responsive" src="./assets/close-up-em-carro-eletrico-na-franca.jpg"
+                        alt="Carro elétrico">
+                </div>
+            </div>
+
+        </div>
+        <div class="row dashboard-item">
+            <h2>Insights</h2>
+            <hr>
+            <div class="col-12 col-md-6">
+                <div class="imgInsight">1
+                    <img id="imgInsight" class="imgInsight" src="" alt="Carro elétrico">
+                </div>
+            </div>
+            <div class=" col-12 col-md-6">
+                <h2 id="insightTitle"></h2>
+                <label id="insightText"></label>
+
+            </div>
+
+            <div class=" col-12 mt-4 text-end">
+                <div class="btn" id="NextButton">Próximo Insight</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-12 col-12 d-flex justify-content-center">
+
+                <p>2023 Todos os direitos reservados para Easy Car</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
