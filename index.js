@@ -58,7 +58,6 @@ function showCurrentInsight() {
 
 // Event listener para o botão "Próximo Insight"
 NextButton.addEventListener("click", function () {
-    debugger;
     // Avança para o próximo insight (circula de volta para o primeiro se necessário)
     currentInsightIndex = (currentInsightIndex + 1) % insights.length;
     showCurrentInsight();
