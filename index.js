@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log('clicked');
     })
 
-
+    
     // Event listener para o botão "Próximo Insight"
     NextButton.addEventListener("click", function () {
         // Avançar para o próximo insight (circula de volta para o primeiro se necessário)
