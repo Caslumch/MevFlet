@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //     alert('clicou')
 // });
 
-// Defina uma lista de insights
+// Definir uma lista de insights
 const insights = [
     {
         title: "Crédito De Carbono",
@@ -42,7 +42,7 @@ const insights = [
 // Inicialize um índice para acompanhar o insight atual
 let currentInsightIndex = 0;
 
-// Obtenha referências para os elementos HTML relevantes
+// Obter referências para os elementos HTML relevantes
 const insightTitle = document.getElementById("insightTitle");
 const insightText = document.getElementById("insightText");
 const imgInsight = document.getElementById("imgInsight");
@@ -58,12 +58,12 @@ function showCurrentInsight() {
 
 // Event listener para o botão "Próximo Insight"
 NextButton.addEventListener("click", function () {
-    // Avança para o próximo insight (circula de volta para o primeiro se necessário)
+    // Avançar para o próximo insight (circula de volta para o primeiro se necessário)
     currentInsightIndex = (currentInsightIndex + 1) % insights.length;
     showCurrentInsight();
 });
 
-// Exiba o primeiro insight ao carregar a página
+// Exibir o primeiro insight ao carregar a página
 showCurrentInsight();
 
 });
