@@ -89,13 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 
-
-    // const lerMaisBtn = document.getElementById("lerMaisBtn");
-    // lerMaisBtn.addEventListener("click", function () {
-    //     alert('clicou')
-    // });
-
-
     // Event listener para o botão "Próximo Insight"
     NextButton.addEventListener("click", function () {
         // Avançar para o próximo insight (circula de volta para o primeiro se necessário)
