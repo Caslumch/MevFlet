@@ -1,11 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Seu código JavaScript aqui
-    // const lerMaisBtn = document.getElementById("lerMaisBtn");
-    // lerMaisBtn.addEventListener("click", function () {
-    //     alert('clicou')
-    // });
 
-    // Definir uma lista de insights
     const insights = [
         {
             title: "Crédito De Carbono",
@@ -44,13 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
             link: "./assets/close-up-no-carregamento-do-carro-eletrico.jpg"
         },
-        // Adicione mais insights aqui
     ];
 
-    // Inicialize um índice para acompanhar o insight atual
     let currentInsightIndex = 0;
 
-    // Obter referências para os elementos HTML relevantes
     const insightTitle = document.getElementById("insightTitle");
     const insightText = document.getElementById("insightText");
     const insightText1 = document.getElementById("insightText1");
@@ -63,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const imgInsight = document.getElementById("imgInsight");
     const NextButton = document.getElementById("NextButton");
 
-    // Função para exibir o insight atual
     function showCurrentInsight() {
         const currentInsight = insights[currentInsightIndex];
         insightTitle.textContent = currentInsight.title;
@@ -85,18 +75,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     reload.addEventListener("click", function () {
         window.location.reload();
-        console.log('clicked');
     })
 
     
-    // Event listener para o botão "Próximo Insight"
     NextButton.addEventListener("click", function () {
-        // Avançar para o próximo insight (circula de volta para o primeiro se necessário)
         currentInsightIndex = (currentInsightIndex + 1) % insights.length;
         showCurrentInsight();
     });
 
-    // Exibir o primeiro insight ao carregar a página
     showCurrentInsight();
 
 });
