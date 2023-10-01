@@ -13,7 +13,7 @@ body {
 /* Para dispositivos móveis com largura máxima de 768 pixels */
 @media (max-width: 768px) {
     body {
-        background: none;
+        background: white;
     }
 }
 
