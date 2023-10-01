@@ -1,4 +1,4 @@
-# Projeto de Apresentação de Insights - Challenge BRQ - Easy Carros
+# Projeto de Apresentação de Insights - Challenge BRQ - Mev-Fleet
 
 Este é um pequeno projeto frontend criado como parte do Curso de Análise e Desenvolvimento de Sistemas da Universidade FIAP. O objetivo deste projeto é apresentar 3 insights relacionados ao Challenge BRQ, utilizando HTML, CSS e JavaScript puro, com a ajuda do framework de CSS Bootstrap.
 

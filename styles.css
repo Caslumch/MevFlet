@@ -9,6 +9,14 @@ body {
     background-attachment: fixed;
 }
 
+/* Para dispositivos móveis com largura máxima de 768 pixels */
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Preencher toda a tela */
+        background-position: center; /* Centralizar a imagem */
+    }
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -42,11 +50,13 @@ header {
 }
 
 .logo {
-    font-size: 30px;
+    width: 16%;
+    max-width: 100%;
+    height: auto;
 }
 
 .logoImg {
-    width: 15%;
+    width: 8%;
     max-width: 100%;
     height: auto;
 }
@@ -156,10 +166,20 @@ hr {
     border-radius: 10px;
 }
 
+.container {
+    color: white;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #00000070;
+}
+
 .card-grafico {
     background-color:  rgba(210, 210, 210, 0.694);
-    width: 872px;
-    height: 683px;
+    max-width: 875px;
+    height: 686px;
+    margin: 20px auto;
     border-radius: 15px;
 }
 
@@ -169,6 +189,20 @@ hr {
     width: 212px;
     height: 95px;
     border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .card-grafico {
+        width: 100%;
+        height: 100%;
+        /* Definir a largura como 100% para que ela ocupe a largura total da tela */
+        /* Outros estilos para .card-grafico em telas menores */
+    }
+
+    .card-contadores {
+        width: 100%; /* Definir a largura como 100% para que ela ocupe a largura total da tela */
+        /* Outros estilos para .card-contadores em telas menores */
+    }
 }
 
 .lbContadores {
@@ -183,3 +217,38 @@ hr {
     color: gray;
 
 }
+
+
+
+/* Estilo para o botão de expansão */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Estilo para o menu quando expandido */
+.menu-expanded .options {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para o menu quando recolhido */
+.options {
+    display: none;
+    list-style: none;
+}
+
+/* Adicione outros estilos de menu aqui */

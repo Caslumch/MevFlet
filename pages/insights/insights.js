@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "../../index.html"
     });
 
+    const menuToggle = document.getElementById("menuToggle");
+    const navbarNav = document.getElementById("navbarNav");
+
+    // Adiciona um ouvinte de clique ao botão de expansão
+    menuToggle.addEventListener("click", function () {
+        // Alternar a classe "show" no elemento do menu
+        navbarNav.classList.toggle("show");
+    });
+
     const insights = [
         {
             title: "Crédito De Carbono",
@@ -67,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         imgInsight.src = currentInsight.link;
 
         if (insightText2.textContent) {
-            debugger;
+            
             insightText2.textContent = currentInsight.text2;
             insightText2.style.display = "revert";
         } else {
