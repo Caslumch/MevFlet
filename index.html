@@ -19,7 +19,7 @@
             <div class="row container-fluid">
                 <div class="d-none d-md-block col-md-6 d-flex  ">
 
-                    <a class="navbar-brand mr-auto" id="reload"  href="#">
+                    <a class="navbar-brand mr-auto" id="reload" href="#">
                         <img class="logoImg" src="./assets/logo-easy-car1.png" alt="Logo da Dashboard">
                     </a>
                 </div>
@@ -27,6 +27,12 @@
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end text-md-end text-center"
                     id="">
                     <ul class="navbar-nav options d-flex flex-column flex-md-row align-items-center">
+                        <li class="nav-item">
+                            <a id="inicio" class="nav-link typeOpt" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="Insights" class="nav-link typeOpt" href="#">Insights</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link typeOpt" href="#">Minha Frota</a>
                         </li>
@@ -49,43 +55,40 @@
         </nav>
     </header>
     <div class="container">
-        <div class="row dashboard-car">
-            <div class="textOne col-12 col-md-6">
-                <h2>Seja parte da revolução sustentável com a Easy Carros!</h2>
-                <label>Na Easy Carros, não apenas alugamos carros elétricos, nós transformamos o seu modo de viajar em
-                    uma experiência revolucionária e eco-friendly.
-                    Aqui estão algumas propostas emocionantes que tornam a Easy Carros a escolha perfeita:</label>
-                <img class="logoImg d-none d-md-inline-flex mt-4" src="./assets/logo-easy-car1.png"
-                    alt="Logo da Dashboard">
+        <div class="row">
+            <div id="reload" class="mt-1 col-12 col-md-3">
+                <img class="imgVerti img-fluid" src="./assets/imgVerticalCrop.png" alt="imgVerti">
             </div>
-            <div  id="reload" class="col-12 col-md-6 d-flex justify-content-center justify-content-md-center">
-                <div class="circle-container image-overlay" >
-                    <img class="car img-responsive" src="./assets/close-up-em-carro-eletrico-na-franca.jpg"
-                        alt="Carro elétrico">
+            <div class="col-12 col-md-9">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            
+                            <div class="m-1 col-3 card-contadores d-flex justify-content-center" style="background-color: red;">
+                                <b class="mt-3 lbContadores">32<br> Veiculos</b>
+                                <u class="mt-3 uContadores">Saiba Mais</u>
+                            </div>
+                            <div class="m-1 col-3 card-contadores d-flex justify-content-center">
+                                <b class=" mt-3 lbContadores">48.000<br> Km Rodados</b>
+                                <u class="mt-3 uContadores">Saiba Mais</u>
+                            </div>
+                            <div class="m-1 col-3 card-contadores d-flex justify-content-center">
+                                <b class=" mt-3 lbContadores">Consumo<br> 758.400 KWh</b>
+                                <u class="mt-3 uContadores">Saiba Mais</u>
+                            </div>
+                            <div class="m-1 col-3 card-contadores d-flex justify-content-center ">
+                                <b class=" mt-3 lbContadores">Economia<br> 165,6 (tonCO2)</b>
+                                <u class="mt-3 uContadores ">Saiba Mais</u>
+                            </div>
+                            <div class="m-1 col-12 card-grafico">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <!-- grafico -->
+                    </div>
                 </div>
-            </div>
-
-        </div>
-        <div class="row dashboard-item">
-            <h2>Insights</h2>
-            <hr>
-            <div class="col-12 col-md-6">
-                <div class="imgInsight">
-                    <img id="imgInsight" class="imgInsight" src="" alt="Carro elétrico">
-                </div>
-            </div>
-            <div class=" col-12 col-md-6">
-                <h2 id="insightTitle"></h2>
-                <ul style="text-align: initial;">
-                    <li class="mt-3" id="insightText"></li>
-                    <li class="mt-3" id="insightText1"></li>
-                    <li class="mt-3" id="insightText2"></li>
-                </ul>
-
-            </div>
-
-            <div class=" col-12 mt-4 text-end">
-                <div class="btn" id="NextButton">Próximo Insight</div>
             </div>
         </div>
 
