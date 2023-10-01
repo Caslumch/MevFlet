@@ -46,15 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     ];
 
+
     let currentInsightIndex = 0;
 
     const insightTitle = document.getElementById("insightTitle");
     const insightText = document.getElementById("insightText");
     const insightText1 = document.getElementById("insightText1");
     const insightText2 = document.getElementById("insightText2");
-
-
-
 
 
     const imgInsight = document.getElementById("imgInsight");
