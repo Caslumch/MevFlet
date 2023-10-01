@@ -29,7 +29,7 @@ header {
     margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
-    background-color: #00000070;
+    background-color: #8f8f8f;
 }
 
 .dashboard-item {
@@ -166,17 +166,10 @@ hr {
     border-radius: 10px;
 }
 
-.container {
-    color: white;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #00000070;
-}
+
 
 .card-grafico {
-    background-color: rgb(210, 210, 210);
+    background-color: rgba(210, 210, 210, 0.694);
     max-width: 875px;
     height: 686px;
     margin: 20px auto;
@@ -185,7 +178,7 @@ hr {
 
 .card-contadores {
     color: rgb(252, 252, 252);
-    background: rgb(210, 210, 210);
+    background: rgba(210, 210, 210, 0.694);
     width: 212px;
     height: 95px;
     border-radius: 15px;
