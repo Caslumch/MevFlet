@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuToggle.addEventListener("click", function () {
         navbarNav.classList.toggle("show");
-    });
+    }); 
 });

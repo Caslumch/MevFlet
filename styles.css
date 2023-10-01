@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
+    /* background-image: url('./assets/image_waves.png'); */
     background-image: url('./assets/Untitled-1-01.png');
     background-size: 100% 100%;
     background-repeat: repeat;
@@ -12,8 +13,7 @@ body {
 /* Para dispositivos móveis com lar. máxima de 768 pixels */
 @media (max-width: 768px) {
     body {
-        background-size: cover; 
-        background-position: center; 
+        background: white;
     }
 }
 
@@ -29,7 +29,7 @@ header {
     margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
-    background-color: #00000070;
+    background-color: #8f8f8f;
 }
 
 .dashboard-item {
@@ -166,17 +166,10 @@ hr {
     border-radius: 10px;
 }
 
-.container {
-    color: white;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #00000070;
-}
+
 
 .card-grafico {
-    background-color:  rgba(210, 210, 210, 0.694);
+    background-color: rgba(210, 210, 210, 0.694);
     max-width: 875px;
     height: 686px;
     margin: 20px auto;
@@ -245,4 +238,3 @@ hr {
     display: none;
     list-style: none;
 }
-
