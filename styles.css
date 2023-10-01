@@ -176,7 +176,7 @@ hr {
 }
 
 .card-grafico {
-    background-color: rgba(210, 210, 210, 0.694);
+    background-color: rgb(210, 210, 210);
     max-width: 875px;
     height: 686px;
     margin: 20px auto;
@@ -185,7 +185,7 @@ hr {
 
 .card-contadores {
     color: rgb(252, 252, 252);
-    background: rgba(210, 210, 210, 0.694);
+    background: rgb(210, 210, 210);
     width: 212px;
     height: 95px;
     border-radius: 15px;
