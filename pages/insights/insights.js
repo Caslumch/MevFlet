@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menuToggle");
     const navbarNav = document.getElementById("navbarNav");
 
-    // Adiciona um ouvinte de clique ao botão de expansão
     menuToggle.addEventListener("click", function () {
-        // Alternar a classe "show" no elemento do menu
         navbarNav.classList.toggle("show");
     });
 

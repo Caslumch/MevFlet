@@ -195,13 +195,11 @@ hr {
     .card-grafico {
         width: 100%;
         height: 100%;
-        /* Definir a largura como 100% para que ela ocupe a largura total da tela */
-        /* Outros estilos para .card-grafico em telas menores */
+
     }
 
     .card-contadores {
-        width: 100%; /* Definir a largura como 100% para que ela ocupe a largura total da tela */
-        /* Outros estilos para .card-contadores em telas menores */
+        width: 100%;
     }
 }
 
@@ -220,7 +218,6 @@ hr {
 
 
 
-/* Estilo para o botão de expansão */
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -239,16 +236,13 @@ hr {
     background-color: #fff;
 }
 
-/* Estilo para o menu quando expandido */
 .menu-expanded .options {
     display: flex;
     flex-direction: column;
 }
 
-/* Estilo para o menu quando recolhido */
 .options {
     display: none;
     list-style: none;
 }
 
-/* Adicione outros estilos de menu aqui */
